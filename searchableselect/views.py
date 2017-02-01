@@ -8,10 +8,8 @@ except ImportError:
 
 from django.utils.encoding import smart_str
 from django.http import JsonResponse
-from django.contrib.admin.views.decorators import staff_member_required
 
 
-@staff_member_required
 def filter_models(request):
     model_name = request.GET.get('model')
     search_field = request.GET.get('search_field')
