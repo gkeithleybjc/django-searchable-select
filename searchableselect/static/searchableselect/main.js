@@ -68,6 +68,7 @@
                 name: 'objects',
                 source: objects.ttAdapter(),
                 displayKey: 'matched_name',
+                limit: 20,
                 templates: {
                     loading: '<div class="tt-nothing-found">Loading</div>',
                     empty: '<div class="tt-nothing-found">Nothing found</div>',
