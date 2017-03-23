@@ -13,7 +13,7 @@ from django.http import JsonResponse
 def filter_models(request):
     model_name = request.GET.get('model')
     search_field = request.GET.get('search_field')
-    value = request.GET.get('q')
+    value = request.GET.get('q').strip()
 
     model = get_model(model_name)
 
